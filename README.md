@@ -1,1 +1,5 @@
 # FolderWatch
+
+# STATUS: INCOMPLETE.
+
+
