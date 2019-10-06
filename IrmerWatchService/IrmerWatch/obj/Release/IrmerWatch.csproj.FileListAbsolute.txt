@@ -1,0 +1,16 @@
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\bin\Release\IrmerWatch.exe.config
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\bin\Release\IrmerWatch.exe
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\bin\Release\IrmerWatch.pdb
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.dll
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.pdb
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.xml
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.Auth.pdb
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.Auth.xml
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\obj\Release\IrmerWatch.csprojAssemblyReference.cache
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\obj\Release\IrmerWatch.ProjectInstaller.resources
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\obj\Release\IrmerWatch.csproj.GenerateResource.cache
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\obj\Release\IrmerWatch.csproj.CoreCompileInputs.cache
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\obj\Release\IrmerWatch.csproj.CopyComplete
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\obj\Release\IrmerWatch.exe
+C:\Users\EatSleepCode\source\repos\IrmerWatchService\IrmerWatch\obj\Release\IrmerWatch.pdb
