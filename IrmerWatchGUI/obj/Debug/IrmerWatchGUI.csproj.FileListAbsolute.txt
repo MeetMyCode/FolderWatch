@@ -59,7 +59,6 @@ C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\
 C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchService\Microsoft.Exchange.WebServices.xml
 C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\Settings\Recipients.txt
 C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\Settings\GeneralSettings.txt
-C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\Batch File\PassToExcelMacro.bat
 C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchGUI.exe.config
 C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchGUI.exe
 C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchGUI.pdb
