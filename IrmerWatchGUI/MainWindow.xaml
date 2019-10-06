@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="IrmerWatch v1.0"
         Width="520"
-        Height="660"
+        Height="540"
         WindowStartupLocation="CenterScreen">
 
     <Grid Background="LightGray">
@@ -90,39 +90,6 @@
                          ToolTip="{Binding ElementName=FolderToMonitor, Path=Content}"></Label>
                 <Button Content="Browse" Padding="10,0,10,0" Margin="5,5,30,5" DockPanel.Dock="Right"
                         HorizontalContentAlignment="Center" Click="BrowseDirectoryButtonClicked"/>
-            </DockPanel>
-
-            <DockPanel LastChildFill="False" Margin="10,0,0,0">
-                <Label Content="Batch File:" DockPanel.Dock="Left" Width="95" 
-                       HorizontalAlignment="Left" Margin="5,5,5,5" VerticalAlignment="Top"/>
-                <Label x:Name="BatchFile" Content="Choose a Batch File to Execute..." Margin="0,5,0,5" DockPanel.Dock="Left" HorizontalAlignment="Stretch" 
-                         Width="285" Background="LightGray" 
-                         ToolTip="{Binding ElementName=BatchFile, Path=Content}"></Label>
-                <Button x:Name="BrowseBatchFile" Content="Browse" Padding="10,0,10,0" Margin="5,5,30,5" DockPanel.Dock="Right"
-                        HorizontalContentAlignment="Center" Click="BrowseBatchFileButtonClicked"/>
-            </DockPanel>
-
-            <DockPanel LastChildFill="False" Margin="10,0,0,0">
-                <Label Content="Stat File Dir.:" DockPanel.Dock="Left" Width="95" 
-                       HorizontalAlignment="Left" Margin="5,5,5,5" VerticalAlignment="Top"/>
-                <Label x:Name="StatFileDirectory" Content="Choose the Stat File Directory..." Margin="0,5,0,5" DockPanel.Dock="Left" HorizontalAlignment="Stretch" 
-                         Width="285" Background="LightGray" 
-                         ToolTip="{Binding ElementName=BatchFile, Path=Content}"></Label>
-                <Button x:Name="BrowseStatFileDirectory" Content="Browse" Padding="10,0,10,0" Margin="5,5,30,5" DockPanel.Dock="Right"
-                        HorizontalContentAlignment="Center" Click="BrowseStatFileDirectoryButtonClicked"/>
-            </DockPanel>
-
-            <DockPanel LastChildFill="False" Margin="10,0,0,0">
-                <Label Content="Execute at:" DockPanel.Dock="Left" Width="95" 
-                       HorizontalAlignment="Left" Margin="5,5,5,5" VerticalAlignment="Top"/>
-
-                <wpfTool:DateTimeUpDown x:Name="BatchFileTime" Width="100" HorizontalAlignment="Stretch"
-                                        Format="ShortTime" Value="16:00">
-                    
-                </wpfTool:DateTimeUpDown>
-
-
-
             </DockPanel>
 
 

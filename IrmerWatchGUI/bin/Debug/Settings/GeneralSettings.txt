@@ -3,4 +3,4 @@
 ******************************************************************************************
 **** SENDER - WHO WILL THE RECIPIENTS BE RECEIVING THE EMAIL FROM? ****
 ross.higgins@nhs.net
-**** FOLDER TO MONITOR - WHAT FOLDER I TO BE WATCHED? ****
+**** FOLDER TO MONITOR - WHAT FOLDER IS TO BE WATCHED? ****

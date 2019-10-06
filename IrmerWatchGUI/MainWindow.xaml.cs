@@ -124,17 +124,17 @@ namespace IrmerWatchGUI
 			return sender;
 		}
 
-		private void BrowseBatchFileButtonClicked(object sender, RoutedEventArgs e)
-		{
-			var dialog = new OpenFileDialog();
-			DialogResult result = dialog.ShowDialog();
+		//private void BrowseBatchFileButtonClicked(object sender, RoutedEventArgs e)
+		//{
+		//	var dialog = new OpenFileDialog();
+		//	DialogResult result = dialog.ShowDialog();
 
-			if (result.ToString() == @"OK")
-			{
-				BatchFile.Content = dialog.FileName;
-			}
+		//	if (result.ToString() == @"OK")
+		//	{
+		//		BatchFile.Content = dialog.FileName;
+		//	}
 
-		}
+		//}
 
 		private void BrowseDirectoryButtonClicked(object sender, RoutedEventArgs e)
 		{
@@ -148,17 +148,17 @@ namespace IrmerWatchGUI
 
 		}
 
-		private void BrowseStatFileDirectoryButtonClicked(object sender, RoutedEventArgs e)
-		{
-			var dialog = new FolderBrowserDialog();
-			DialogResult result = dialog.ShowDialog();
+		//private void BrowseStatFileDirectoryButtonClicked(object sender, RoutedEventArgs e)
+		//{
+		//	var dialog = new FolderBrowserDialog();
+		//	DialogResult result = dialog.ShowDialog();
 
-			if (result.ToString() == @"OK")
-			{
-				StatFileDirectory.Content = dialog.SelectedPath;
-			}
+		//	if (result.ToString() == @"OK")
+		//	{
+		//		StatFileDirectory.Content = dialog.SelectedPath;
+		//	}
 
-		}
+		//}
 
 		private void AddNewRecipientButtonClicked(object sender, RoutedEventArgs e)
 		{
@@ -287,18 +287,6 @@ namespace IrmerWatchGUI
 				FolderToMonitor.Foreground = Brushes.Red;
 			}
 
-			if (!File.Exists(BatchFile.Content.ToString()))
-			{
-				isValid = false;
-				BatchFile.Foreground = Brushes.Red;
-			}
-
-			if (!Directory.Exists(StatFileDirectory.Content.ToString()))
-			{
-				isValid = false;
-				StatFileDirectory.Foreground = Brushes.Red;
-			}
-
 			if (invalidEmails.Count != 0)
 			{
 				isValid = false;
@@ -412,12 +400,10 @@ namespace IrmerWatchGUI
 					SenderEmailAddress.Content.ToString(),
 					SenderPassword.Password,
 					GetRecipientsFromStackPanel(),
-					FolderToMonitor.Content.ToString(),
-					BatchFile.Content.ToString(),
-					StatFileDirectory.Content.ToString()
+					FolderToMonitor.Content.ToString()
 				};
 
-				procInfo.Arguments = string.Format(@" start {0} {1} {2} {3} {4} {5} {6}", serviceName, args[0], args[1], args[2], args[3], args[4], args[5]);
+				procInfo.Arguments = string.Format(@" start {0} {1} {2} {3} {4}", serviceName, args[0], args[1], args[2], args[3]);
 
 				try
 				{
@@ -441,9 +427,6 @@ namespace IrmerWatchGUI
 							ServiceStatusText.Content = status.ToString();
 							StopServiceButton.IsEnabled = false;
 							StartServiceButton.IsEnabled = false;
-							BrowseBatchFile.IsEnabled = false;
-							BrowseStatFileDirectory.IsEnabled = false;
-							BatchFileTime.IsEnabled = false;
 							Thread.Sleep(1000);
 							service.Refresh();
 							status = service.Status;
@@ -455,9 +438,6 @@ namespace IrmerWatchGUI
 							ServiceStatusText.Foreground = Brushes.Green;
 							StopServiceButton.IsEnabled = true;
 							StartServiceButton.IsEnabled = false;
-							BrowseBatchFile.IsEnabled = false;
-							BrowseStatFileDirectory.IsEnabled = false;
-							BatchFileTime.IsEnabled = false;
 						}
 						else
 						{
@@ -465,9 +445,6 @@ namespace IrmerWatchGUI
 							ServiceStatusText.Foreground = Brushes.Red;
 							StopServiceButton.IsEnabled = false;
 							StartServiceButton.IsEnabled = true;
-							BrowseBatchFile.IsEnabled = true;
-							BrowseStatFileDirectory.IsEnabled = false;
-							BatchFileTime.IsEnabled = true;
 						}
 
 					}

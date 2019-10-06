@@ -23,12 +23,8 @@ namespace IrmerWatch
 		private static string SenderEmail;
 		private static FileSystemWatcher xlsWatcher;
 		private static FileSystemWatcher xlsxWatcher;
-		private static FileSystemWatcher BatchFileWatcher;
 		private static bool ServiceStatus = false;
 		private static string WatchedDirectory;
-		private static string StatFileDirectory;
-		private static string BatchFileToExecute;
-		private static DateTime BatchFileExecutionTime;
 
 		private static List<string> recipients;
 
@@ -58,16 +54,6 @@ namespace IrmerWatch
 				//Get Directory to watch.
 				WatchedDirectory = args[3];
 
-				//Get Batch File To Execute
-				BatchFileToExecute = args[4];
-
-				//Get Stat File Directory to Watch
-				StatFileDirectory = args[5];
-
-				//Get Batch File Execution Time
-				//BatchFileExecutionTime = DateTime.ParseExact(args[6], "H:mm", null, System.Globalization.DateTimeStyles.None);
-
-
 			}
 			catch (Exception e)
 			{
@@ -80,27 +66,13 @@ namespace IrmerWatch
 
 			//Watches .xls files
 			xlsWatcher = getWatcher("xls");
-			BatchFileWatcher = getBatWatcher("xls");
 
 			//Watches .xlsx files
 			xlsxWatcher = getWatcher("xlsx");
-			BatchFileWatcher = getBatWatcher("xlsx");
 
 			//Inform User of Service Status
 			ServiceStatus = true;
 			InformOfServiceStoppingOrStarting(ServiceStatus);
-		}
-
-		//private void startBatchFileTimer()
-		//{
-		//	//START HERE
-		//	var dt = ... // next 8:00 AM from now
-		//	var timer = new Timer(bfDelegate, null, dt - DateTime.Now, TimeSpan.FromHours(24));
-		//}
-
-		private void ExecuteBatchFile()
-		{
-
 		}
 
 		protected override void OnStop()
@@ -112,19 +84,6 @@ namespace IrmerWatch
 			//Inform User of Service Status
 			ServiceStatus = false;
 			InformOfServiceStoppingOrStarting(ServiceStatus);
-		}
-
-		private static FileSystemWatcher getBatWatcher(string fileExtension)
-		{
-			FileSystemWatcher watcher = new FileSystemWatcher();
-			watcher.Path = StatFileDirectory;
-			watcher.NotifyFilter = NotifyFilters.FileName;
-			watcher.Filter = string.Format("*.{0}", fileExtension);
-			watcher.Created += new FileSystemEventHandler(OnStatFileDirectoryChanged);
-			watcher.Error += new ErrorEventHandler(OnError);
-			watcher.EnableRaisingEvents = true;
-
-			return watcher;
 		}
 
 		private static FileSystemWatcher getWatcher(string fileExtension)
@@ -169,12 +128,6 @@ namespace IrmerWatch
 		{
 			string file = e.FullPath;
 			EmailTheCreatedFile(file);
-		}
-
-		private static void OnStatFileDirectoryChanged(object sender, FileSystemEventArgs e)
-		{
-			string statFile = e.FullPath;
-			ExecuteBatchFile(statFile);
 		}
 
 		private static void InformOfServiceStoppingOrStarting(bool serviceStatus)
@@ -229,11 +182,6 @@ namespace IrmerWatch
 			email.Body = new MessageBody(emailBody);
 			email.Attachments.AddFileAttachment(file);
 			email.Send();
-		}
-
-		private static void ExecuteBatchFile(string statFile)
-		{
-			Process.Start(BatchFileToExecute, statFile);
 		}
 
 		private static bool CertificateValidationCallBack(object sender,
