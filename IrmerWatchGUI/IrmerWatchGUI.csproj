@@ -79,8 +79,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CustomViews\NotificationRecipient.xaml.cs">
+      <DependentUpon>NotificationRecipient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomWindows\SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mySettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>mySettings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Timer.cs" />
-    <Page Include="CustomWindows\Recipients.xaml">
+    <Page Include="CustomViews\NotificationRecipient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomWindows\SettingsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -93,9 +108,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NOT NEEDEDCustom Classes\Recipient.cs" />
-    <Compile Include="CustomWindows\Recipients.xaml.cs">
-      <DependentUpon>Recipients.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -123,6 +135,10 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="mySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>mySettings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -166,16 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\settings2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Settings\Recipients.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Settings\GeneralSettings.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Refresh-icon.png" />

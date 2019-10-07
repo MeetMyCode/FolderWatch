@@ -23,6 +23,7 @@ using MessageBox = System.Windows.MessageBox;
 using System.Threading;
 using System.Text.RegularExpressions;
 using Label = System.Windows.Controls.Label;
+using System.Configuration;
 
 namespace IrmerWatchGUI
 {
@@ -82,59 +83,28 @@ namespace IrmerWatchGUI
 		{
 			recipientStackPanel.Children.Clear();
 
-			string line;
 			string email;
 
 			Recipients.Content = null;
 
-			// Read the file and display it line by line.  
-			StreamReader file = new StreamReader(@"./Settings/Recipients.txt");
-			while ((line = file.ReadLine()) != null)
+			// Read the file and display it line by line. 
+			foreach (SettingsProperty setting in mySettings.Default.Properties)
 			{
-				string[] recipientDetails = line.Split(',');
-				email = recipientDetails[1].Trim();
-				Label recipient = new Label();
-				recipient.Content = email;
-				recipientStackPanel.Children.Add(recipient);
+				if (setting.Name != @"SenderEmail")
+				{
+					email = setting.DefaultValue.ToString();
+					Label recipient = new Label();
+					recipient.Content = email;
+					recipientStackPanel.Children.Add(recipient);
+				}
 			}
-
 			return recipientStackPanel;
 		}
 
 		private string GetSenderEmail()
 		{
-			string line;
-			string sender = "";
-
-			SenderEmailAddress.Content = "";
-
-			// Read the file and display it line by line.  
-			StreamReader generalSettings = new StreamReader(@"./Settings/GeneralSettings.txt");
-
-			while ((line = generalSettings.ReadLine()) != null)
-			{
-				if (line.Contains("* SENDER"))
-				{
-					sender = generalSettings.ReadLine();
-					break;
-				}
-
-			}
-
-			return sender;
+			return mySettings.Default.SenderEmail.ToString();
 		}
-
-		//private void BrowseBatchFileButtonClicked(object sender, RoutedEventArgs e)
-		//{
-		//	var dialog = new OpenFileDialog();
-		//	DialogResult result = dialog.ShowDialog();
-
-		//	if (result.ToString() == @"OK")
-		//	{
-		//		BatchFile.Content = dialog.FileName;
-		//	}
-
-		//}
 
 		private void BrowseDirectoryButtonClicked(object sender, RoutedEventArgs e)
 		{
@@ -148,33 +118,10 @@ namespace IrmerWatchGUI
 
 		}
 
-		//private void BrowseStatFileDirectoryButtonClicked(object sender, RoutedEventArgs e)
-		//{
-		//	var dialog = new FolderBrowserDialog();
-		//	DialogResult result = dialog.ShowDialog();
-
-		//	if (result.ToString() == @"OK")
-		//	{
-		//		StatFileDirectory.Content = dialog.SelectedPath;
-		//	}
-
-		//}
-
-		private void AddNewRecipientButtonClicked(object sender, RoutedEventArgs e)
+		private void OpenSettings(object sender, RoutedEventArgs e)
 		{
-			Recipients recipientList = new Recipients();
-			recipientList.Show();
-		}
-
-		private void OpenSettingsFolder(object sender, RoutedEventArgs e)
-		{
-			if (Directory.Exists(@"./Settings"))
-			{
-				string baseDirectory = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
-				string settingsDirectory = baseDirectory + "/Settings";
-
-				Process.Start(settingsDirectory);
-			}
+			SettingsWindow settingsWindow = new SettingsWindow();
+			settingsWindow.Show();
 		}
 
 		private void StopService(object sender, RoutedEventArgs e)
@@ -474,7 +421,7 @@ namespace IrmerWatchGUI
 
 
 		/// Verify if a service exists
-			private bool ServiceExists(string ServiceName)
+		private bool ServiceExists(string ServiceName)
 		{
 			return ServiceController.GetServices().Any(serviceController => serviceController.ServiceName.Equals(ServiceName));
 		}

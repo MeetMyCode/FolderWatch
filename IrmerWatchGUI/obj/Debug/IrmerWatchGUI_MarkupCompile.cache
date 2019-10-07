@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\App.xaml
-2-752104981
+3-1607152542
 
-8-1714140228
+10-952246541
 211386905141
-CustomWindows\Recipients.xaml;MainWindow.xaml;
+CustomViews\NotificationRecipient.xaml;CustomWindows\SettingsWindow.xaml;MainWindow.xaml;
 
 False
 

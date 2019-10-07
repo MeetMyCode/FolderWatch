@@ -30,7 +30,7 @@
             </Grid.Background>
 
             <Button Grid.Column="0" HorizontalAlignment="Left" 
-                    VerticalAlignment="Top" Margin="5,5,0,0" Width="50" Height="50" Click="OpenSettingsFolder">
+                    VerticalAlignment="Top" Margin="5,5,0,0" Width="50" Height="50" Click="OpenSettings">
                 <Button.Background>
                     <ImageBrush ImageSource="/Images/settings2.png"/>
                 </Button.Background>

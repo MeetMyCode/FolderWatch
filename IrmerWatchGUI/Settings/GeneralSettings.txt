@@ -1,6 +1,0 @@
-﻿******************************************************************************************
-****** DO NOT EDIT/DELETE LINES CONTAINING ASTERISKS - THESE ARE FOR COMMENTS ONLY *******
-******************************************************************************************
-**** SENDER - WHO WILL THE RECIPIENTS BE RECEIVING THE EMAIL FROM? ****
-Big.Cheese@nhs.net
-**** FOLDER TO MONITOR - WHAT FOLDER IS TO BE WATCHED? ****

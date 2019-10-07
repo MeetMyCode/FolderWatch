@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="IrmerWatchGUI.CustomViews.NotificationRecipient"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IrmerWatchGUI.CustomViews"
+             mc:Ignorable="d"
+             Height="auto">
+    <Grid>
+        <DockPanel LastChildFill="True" Margin="0,10,0,0">
+            <TextBox Text="Name" HorizontalAlignment="Left" Margin="0,0,5,0" Width="150"/>
+            <TextBox Text="Email Address"/>
+        </DockPanel>
+    </Grid>
+</UserControl>
