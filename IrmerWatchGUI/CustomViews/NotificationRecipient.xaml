@@ -8,8 +8,8 @@
              Height="auto">
     <Grid>
         <DockPanel LastChildFill="True" Margin="0,10,0,0">
-            <TextBox Text="Name" HorizontalAlignment="Left" Margin="0,0,5,0" Width="150"/>
-            <TextBox Text="Email Address"/>
+            <TextBox Name="RecipientName" Text="Name" HorizontalAlignment="Left" Margin="0,0,5,0" Width="150"/>
+            <TextBox Name="RecipientEmail" Text="Email Address"/>
         </DockPanel>
     </Grid>
 </UserControl>

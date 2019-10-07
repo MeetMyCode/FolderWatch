@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,8 @@ namespace IrmerWatchGUI.CustomWindows
 		public SettingsWindow()
 		{
 			InitializeComponent();
+
+			PopulateRecipientStackPanel();
 		}
 
 		private void AddNotificationRecipient(object sender, RoutedEventArgs e)
@@ -30,6 +33,32 @@ namespace IrmerWatchGUI.CustomWindows
 			NotificationRecipient NotificationRecipient = new NotificationRecipient();
 
 			RecipientEmailsStack.Children.Add(NotificationRecipient);
+
+		}
+
+		private void PopulateRecipientStackPanel()
+		{
+			SettingsPropertyCollection settings = mySettings.Default.Properties;
+
+			for (int i = 0; i < settings.Count; i++)
+			{
+				if (i == 0)
+				{
+					SenderName.Content = settings[i].Name;
+					SenderEmail.Text = settings[i].DefaultValue;
+				}
+				else
+				{
+					NotificationRecipient recipient = new NotificationRecipient();
+					recipient.RecipientName = settings[i].Name;
+					recipient.RecipientEmail = settings[i].DefaultValue;
+				}
+
+
+			}
+			
+
+
 
 		}
 	}
