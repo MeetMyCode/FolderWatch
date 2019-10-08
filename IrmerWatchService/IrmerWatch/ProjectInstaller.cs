@@ -7,7 +7,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Threading.Tasks;
 
-namespace IrmerWatch
+namespace FolderWatch
 {
 	[RunInstaller(true)]
 	public partial class ProjectInstaller : System.Configuration.Install.Installer

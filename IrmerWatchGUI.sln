@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2019
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrmerWatchGUI", "IrmerWatchGUI\IrmerWatchGUI.csproj", "{D073EB7C-9A1D-4E63-B299-B35FF228E88B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderWatchGUI", "IrmerWatchGUI\FolderWatchGUI.csproj", "{D073EB7C-9A1D-4E63-B299-B35FF228E88B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrmerWatch", "IrmerWatchService\IrmerWatch\IrmerWatch.csproj", "{41243733-4940-456D-B0B3-3C96C8302069}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderWatch", "IrmerWatchService\IrmerWatch\FolderWatch.csproj", "{41243733-4940-456D-B0B3-3C96C8302069}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

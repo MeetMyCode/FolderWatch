@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using IrmerWatchGUI.CustomWindows;
+using FolderWatchGUI.CustomWindows;
 using System.IO;
 using Path = System.IO.Path;
 using Application = System.Windows.Application;
@@ -25,7 +25,7 @@ using System.Text.RegularExpressions;
 using Label = System.Windows.Controls.Label;
 using System.Configuration;
 
-namespace IrmerWatchGUI
+namespace FolderWatchGUI
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
@@ -33,10 +33,10 @@ namespace IrmerWatchGUI
 	public partial class MainWindow : Window
 	{
 		private StackPanel recipientStackPanel = new StackPanel();
-		private static string ServiceName = @"IrmerWatchService";
+		private static string ServiceName = @"FolderWatchService";
 		private static string baseDirectory = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
-		private static string scExePath = baseDirectory + @"\IrmerWatchService\sc.exe";
-		private static string serviceName = @"IrmerWatchService";
+		private static string scExePath = baseDirectory + @"\FolderWatchService\sc.exe";
+		private static string serviceName = @"FolderWatchService";
 		
 
 		public MainWindow()
@@ -130,8 +130,8 @@ namespace IrmerWatchGUI
 			try
 			{
 				string baseDirectory = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
-				string scExePath = baseDirectory + @"\IrmerWatchService\sc.exe";
-				string serviceName = @"IrmerWatchService";
+				string scExePath = baseDirectory + @"\FolderWatchService\sc.exe";
+				string serviceName = @"FolderWatchService";
 
 				////**************************************8
 
@@ -147,7 +147,7 @@ namespace IrmerWatchGUI
 				ServiceController[] services = ServiceController.GetServices();
 				foreach (ServiceController service in services)
 				{
-					if (service.ServiceName == @"IrmerWatchService")
+					if (service.ServiceName == @"FolderWatchService")
 					{
 						ServiceControllerStatus status = service.Status;
 
@@ -191,11 +191,11 @@ namespace IrmerWatchGUI
 
 		private void StartService(object sender, RoutedEventArgs e)
 		{
-			if (ServiceExists("IrmerWatchService"))
+			if (ServiceExists("FolderWatchService"))
 			{
 				if (ValidationPassedBeforeStartingService())
 				{
-					StartIrmerWatchService();
+					StartFolderWatchService();
 				}
 				else
 				{
@@ -207,8 +207,8 @@ namespace IrmerWatchGUI
 			{
 				if (ValidationPassedBeforeStartingService())
 				{
-					InstallIrmerWatchService();
-					StartIrmerWatchService();
+					InstallFolderWatchService();
+					StartFolderWatchService();
 				}
 				else
 				{
@@ -298,11 +298,11 @@ namespace IrmerWatchGUI
 			return invalidEmails;
 		}
 
-		private void InstallIrmerWatchService()
+		private void InstallFolderWatchService()
 		{
 			string baseDirectory = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
-			string IrmerWatchServicePath = baseDirectory + @"\IrmerWatchService\IrmerWatch.exe";
-			string InstallUtilPath = baseDirectory + @"\IrmerWatchService\InstallUtil.exe";
+			string FolderWatchServicePath = baseDirectory + @"\FolderWatchService\FolderWatch.exe";
+			string InstallUtilPath = baseDirectory + @"\FolderWatchService\InstallUtil.exe";
 
 			Process process = new Process();
 			ProcessStartInfo processInfo = new ProcessStartInfo();
@@ -310,7 +310,7 @@ namespace IrmerWatchGUI
 
 			processInfo.UseShellExecute = true;
 			processInfo.Verb = @"runas";
-			processInfo.Arguments = IrmerWatchServicePath;
+			processInfo.Arguments = FolderWatchServicePath;
 			process.StartInfo = processInfo;
 
 			try
@@ -333,7 +333,7 @@ namespace IrmerWatchGUI
 		}
 
 
-		private void StartIrmerWatchService()
+		private void StartFolderWatchService()
 		{
 			ServiceStatusText.Content = @"Starting Service...";
 
@@ -366,7 +366,7 @@ namespace IrmerWatchGUI
 				ServiceController[] services = ServiceController.GetServices();
 				foreach (ServiceController service in services)
 				{
-					if (service.ServiceName == @"IrmerWatchService")
+					if (service.ServiceName == @"FolderWatchService")
 					{
 						ServiceControllerStatus status = service.Status;
 

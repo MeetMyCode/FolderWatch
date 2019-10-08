@@ -9,7 +9,7 @@ using System.IO;
 using System.Net;
 using System.Windows;
 
-namespace IrmerWatch
+namespace FolderWatch
 {
 	static class Program
 	{
@@ -21,7 +21,7 @@ namespace IrmerWatch
 			ServiceBase[] ServicesToRun;
 			ServicesToRun = new ServiceBase[]
 			{
-				new IrmerWatchService(args)
+				new FolderWatchService(args)
 			};
 			ServiceBase.Run(ServicesToRun);
 		}

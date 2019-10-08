@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IrmerWatchGUI.Custom_Classes
+namespace FolderWatchGUI.Custom_Classes
 {
 	class Recipient
 	{

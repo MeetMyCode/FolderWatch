@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IrmerWatchGUI.Properties" GeneratedClassName="RecipientSettings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FolderWatchGUI.Properties" GeneratedClassName="RecipientSettings">
   <Profiles />
   <Settings>
     <Setting Name="Recipient1" Type="System.String" Scope="User">

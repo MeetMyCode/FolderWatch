@@ -1,0 +1,15 @@
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\bin\Release\FolderWatch.exe.config
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\bin\Release\FolderWatch.exe
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\bin\Release\FolderWatch.pdb
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.dll
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.pdb
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.xml
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.Auth.pdb
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\bin\Release\Microsoft.Exchange.WebServices.Auth.xml
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\obj\Release\FolderWatch.csprojAssemblyReference.cache
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\obj\Release\FolderWatch.ProjectInstaller.resources
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\obj\Release\FolderWatch.csproj.GenerateResource.cache
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\obj\Release\FolderWatch.csproj.CopyComplete
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\obj\Release\FolderWatch.exe
+C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchService\IrmerWatch\obj\Release\FolderWatch.pdb

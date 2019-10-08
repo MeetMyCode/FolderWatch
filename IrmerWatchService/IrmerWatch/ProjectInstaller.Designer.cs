@@ -1,4 +1,4 @@
-﻿namespace IrmerWatch
+﻿namespace FolderWatch
 {
 	partial class ProjectInstaller
 	{
@@ -28,33 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.IrmerWatchServiceProcessInstaller1 = new System.ServiceProcess.ServiceProcessInstaller();
-			this.IrmerWatchServiceInstaller1 = new System.ServiceProcess.ServiceInstaller();
+			this.FolderWatchServiceProcessInstaller1 = new System.ServiceProcess.ServiceProcessInstaller();
+			this.FolderWatchServiceInstaller1 = new System.ServiceProcess.ServiceInstaller();
 			// 
-			// IrmerWatchServiceProcessInstaller1
+			// FolderWatchServiceProcessInstaller1
 			// 
-			this.IrmerWatchServiceProcessInstaller1.Account = System.ServiceProcess.ServiceAccount.LocalSystem;
-			this.IrmerWatchServiceProcessInstaller1.Password = null;
-			this.IrmerWatchServiceProcessInstaller1.Username = null;
-			//this.IrmerWatchServiceProcessInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.IrmerWatchServiceProcessInstaller1_AfterInstall);
+			this.FolderWatchServiceProcessInstaller1.Account = System.ServiceProcess.ServiceAccount.LocalSystem;
+			this.FolderWatchServiceProcessInstaller1.Password = null;
+			this.FolderWatchServiceProcessInstaller1.Username = null;
+			//this.FolderWatchServiceProcessInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.FolderWatchServiceProcessInstaller1_AfterInstall);
 			// 
-			// IrmerWatchServiceInstaller1
+			// FolderWatchServiceInstaller1
 			// 
-			this.IrmerWatchServiceInstaller1.DisplayName = "Irmer Watch Service";
-			this.IrmerWatchServiceInstaller1.ServiceName = "IrmerWatchService";
-			//this.IrmerWatchServiceInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.IrmerWatchServiceInstaller1_AfterInstall);
+			this.FolderWatchServiceInstaller1.DisplayName = "Folder Watch Service";
+			this.FolderWatchServiceInstaller1.ServiceName = "FolderWatchService";
+			//this.FolderWatchServiceInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.FolderWatchServiceInstaller1_AfterInstall);
 			// 
 			// ProjectInstaller
 			// 
 			this.Installers.AddRange(new System.Configuration.Install.Installer[] {
-            this.IrmerWatchServiceProcessInstaller1,
-            this.IrmerWatchServiceInstaller1});
+            this.FolderWatchServiceProcessInstaller1,
+            this.FolderWatchServiceInstaller1});
 
 		}
 
 		#endregion
 
-		private System.ServiceProcess.ServiceProcessInstaller IrmerWatchServiceProcessInstaller1;
-		private System.ServiceProcess.ServiceInstaller IrmerWatchServiceInstaller1;
+		private System.ServiceProcess.ServiceProcessInstaller FolderWatchServiceProcessInstaller1;
+		private System.ServiceProcess.ServiceInstaller FolderWatchServiceInstaller1;
 	}
 }

@@ -1,9 +1,9 @@
-﻿<Window x:Class="IrmerWatchGUI.CustomWindows.SettingsWindow"
+﻿<Window x:Class="FolderWatchGUI.CustomWindows.SettingsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:IrmerWatchGUI.CustomWindows"
+        xmlns:local="clr-namespace:FolderWatchGUI.CustomWindows"
         mc:Ignorable="d"
         SizeToContent="Height"
         Title="Settings" Height="auto" MaxHeight="600" Width="500" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto">

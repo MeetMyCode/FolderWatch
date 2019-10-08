@@ -12,9 +12,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using IrmerWatchGUI.CustomViews;
+using FolderWatchGUI.CustomViews;
 
-namespace IrmerWatchGUI.CustomWindows
+namespace FolderWatchGUI.CustomWindows
 {
 	/// <summary>
 	/// Interaction logic for SettingsWindow.xaml
