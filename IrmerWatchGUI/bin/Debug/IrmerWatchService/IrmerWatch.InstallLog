@@ -705,3 +705,16 @@ Affected parameters are:
    logtoconsole = 
    logfile = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchService\IrmerWatch.InstallLog
    assemblypath = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchService\IrmerWatch.exe
+Installing assembly 'C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchService\IrmerWatch.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchService\IrmerWatch.InstallLog
+   assemblypath = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchService\IrmerWatch.exe
+Installing service IrmerWatchService...
+Service IrmerWatchService has been successfully installed.
+Creating EventLog source IrmerWatchService in log Application...
+Committing assembly 'C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchService\IrmerWatch.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchService\IrmerWatch.InstallLog
+   assemblypath = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\IrmerWatchGUI\bin\Debug\IrmerWatchService\IrmerWatch.exe

@@ -85,10 +85,15 @@
     <Compile Include="CustomWindows\SettingsWindow.xaml.cs">
       <DependentUpon>SettingsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="mySettings.Designer.cs">
+    <Compile Include="Properties\RecipientSettings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>mySettings.settings</DependentUpon>
+      <DependentUpon>RecipientSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\SenderSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SenderSettings.settings</DependentUpon>
     </Compile>
     <Compile Include="Timer.cs" />
     <Page Include="CustomViews\NotificationRecipient.xaml">
@@ -136,9 +141,13 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="mySettings.settings">
+    <None Include="Properties\RecipientSettings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>mySettings.Designer.cs</LastGenOutput>
+      <LastGenOutput>RecipientSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\SenderSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SenderSettings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

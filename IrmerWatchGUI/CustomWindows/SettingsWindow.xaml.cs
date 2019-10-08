@@ -25,6 +25,7 @@ namespace IrmerWatchGUI.CustomWindows
 		{
 			InitializeComponent();
 
+			SetSenderNamAndEmail();
 			PopulateRecipientStackPanel();
 		}
 
@@ -36,30 +37,92 @@ namespace IrmerWatchGUI.CustomWindows
 
 		}
 
+		private void SetSenderNamAndEmail()
+		{
+			SettingsPropertyCollection settings = Properties.SenderSettings.Default.Properties;
+
+			foreach (SettingsProperty setting in settings)
+			{
+				SenderEmail.Text = setting.DefaultValue.ToString();
+			}
+		}
+
 		private void PopulateRecipientStackPanel()
 		{
-			SettingsPropertyCollection settings = mySettings.Default.Properties;
+			//First clear the stackpanel.
+			RecipientEmailsStack.Children.Clear();
 
-			for (int i = 0; i < settings.Count; i++)
+			SettingsPropertyCollection settings = Properties.RecipientSettings.Default.Properties;
+
+			foreach (SettingsProperty setting in settings)
 			{
-				if (i == 0)
-				{
-					SenderName.Content = settings[i].Name;
-					SenderEmail.Text = settings[i].DefaultValue;
-				}
-				else
-				{
-					NotificationRecipient recipient = new NotificationRecipient();
-					recipient.RecipientName = settings[i].Name;
-					recipient.RecipientEmail = settings[i].DefaultValue;
-				}
-
-
+				NotificationRecipient recipient = new NotificationRecipient();
+				recipient.RecipientEmail.Text = setting.DefaultValue.ToString();
+				RecipientEmailsStack.Children.Add(recipient);
 			}
-			
+		}
 
+		private void CloseWindow(object sender, RoutedEventArgs e)
+		{
+			this.Close();
+		}
 
+		private void SaveSettings(object sender, RoutedEventArgs e)
+		{
+			//clear old settings before replacing with new ones.
+			Properties.RecipientSettings.Default.Properties.Clear(); 	   
 
+			//save sender email
+			Properties.SenderSettings.Default.Sender = SenderEmail.Text;
+
+			//remove empty items
+			RemoveEmptyEmailTextBoxes();
+
+			//save recipient emails
+			List<string> recipients = GetRecipientsFromStackPanel();
+
+			int index = 1;
+			foreach (string email in recipients)
+			{
+				SettingsProperty property = new SettingsProperty(@"Recipient" + index);
+				property.DefaultValue = email;
+
+				Properties.RecipientSettings.Default.Properties.Add(property);
+
+				index++;
+			}
+
+			Properties.SenderSettings.Default.Save();
+			Properties.RecipientSettings.Default.Save();
+
+			MessageBox.Show(@"Saved!");
+
+		}
+
+		private void RemoveEmptyEmailTextBoxes()
+		{
+			for (int i = 0; i < RecipientEmailsStack.Children.Count; i++)
+			{
+				if ((RecipientEmailsStack.Children[i] as NotificationRecipient).RecipientEmail.Text == @"")
+				{
+					RecipientEmailsStack.Children.RemoveAt(i);
+				}
+			}
+		}
+
+		private List<string> GetRecipientsFromStackPanel()
+		{
+			List<string> RecipientEmailsArray = new List<string>();
+
+			foreach (NotificationRecipient email in RecipientEmailsStack.Children)
+			{
+				if (email.RecipientEmail.Text != @"")
+				{
+					RecipientEmailsArray.Add(email.RecipientEmail.Text);
+				}
+			}
+
+			return RecipientEmailsArray;
 		}
 	}
 }

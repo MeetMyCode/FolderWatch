@@ -51,13 +51,13 @@
             <GroupBox Header="Sender Details" Padding="0,0,0,5">
                 <StackPanel Orientation="Vertical">
                     <DockPanel LastChildFill="True" Margin="10,5,10,0">
-                        <Label Content="Email:" Width="70" HorizontalAlignment="Left" Margin="0,5,5,5" VerticalAlignment="Top"/>
-                        <Label x:Name="SenderEmailAddress" Margin="5,5,10,0" Background="White"/>
+                        <Label Content="Email:" Width="70" HorizontalAlignment="Left" Margin="0,5,5,5" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+                        <Label x:Name="SenderEmailAddress" Margin="5,5,10,0" Background="White" VerticalContentAlignment="Center"/>
                     </DockPanel>
 
                     <DockPanel LastChildFill="True" Margin="10,5,10,0">
-                        <Label Content="Password:" Width="70" HorizontalAlignment="Left" Margin="0,5,5,5" VerticalAlignment="Top"/>
-                        <PasswordBox x:Name="SenderPassword" Margin="5,5,10,0" Background="White"/>
+                        <Label Content="Password:" Width="70" HorizontalAlignment="Left" Margin="0,5,5,5" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+                        <PasswordBox x:Name="SenderPassword" Margin="5,5,10,0" Background="White" VerticalContentAlignment="Center"/>
                     </DockPanel>
                 </StackPanel>
             </GroupBox>
@@ -84,10 +84,10 @@
 
             <DockPanel LastChildFill="False" Margin="10,0,0,0">
                 <Label Content="Folder:" DockPanel.Dock="Left" Width="95" 
-                       HorizontalAlignment="Left" Margin="5,5,5,5" VerticalAlignment="Top"/>
+                       HorizontalAlignment="Left" Margin="5,5,5,5" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
                 <Label x:Name="FolderToMonitor" Content="Choose a folder to monitor..." Margin="0,5,0,5" DockPanel.Dock="Left" HorizontalAlignment="Stretch" 
                          Width="285" Background="LightGray" 
-                         ToolTip="{Binding ElementName=FolderToMonitor, Path=Content}"></Label>
+                         ToolTip="{Binding ElementName=FolderToMonitor, Path=Content}" VerticalContentAlignment="Center"></Label>
                 <Button Content="Browse" Padding="10,0,10,0" Margin="5,5,30,5" DockPanel.Dock="Right"
                         HorizontalContentAlignment="Center" Click="BrowseDirectoryButtonClicked"/>
             </DockPanel>
@@ -96,9 +96,9 @@
 
             <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
                 <Label Content="Service Status:" DockPanel.Dock="Left" Width="115" 
-                       HorizontalAlignment="Left" Margin="5,5,5,5" VerticalAlignment="Top"/>
+                       HorizontalAlignment="Left" Margin="5,5,5,5" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
                 <Label x:Name="ServiceStatusText" Content="Stopped." Margin="0,5,0,5" DockPanel.Dock="Left" HorizontalAlignment="Stretch" 
-                         Width="285" Foreground="Red"/>
+                         Width="285" Foreground="Red" VerticalContentAlignment="Center"/>
             </StackPanel>
 
         </StackPanel>

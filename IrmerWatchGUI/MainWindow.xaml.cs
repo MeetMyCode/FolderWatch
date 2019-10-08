@@ -88,7 +88,7 @@ namespace IrmerWatchGUI
 			Recipients.Content = null;
 
 			// Read the file and display it line by line. 
-			foreach (SettingsProperty setting in mySettings.Default.Properties)
+			foreach (SettingsProperty setting in Properties.RecipientSettings.Default.Properties)
 			{
 				if (setting.Name != @"SenderEmail")
 				{
@@ -103,7 +103,7 @@ namespace IrmerWatchGUI
 
 		private string GetSenderEmail()
 		{
-			return mySettings.Default.SenderEmail.ToString();
+			return Properties.SenderSettings.Default.Sender.ToString();
 		}
 
 		private void BrowseDirectoryButtonClicked(object sender, RoutedEventArgs e)
@@ -123,6 +123,7 @@ namespace IrmerWatchGUI
 			SettingsWindow settingsWindow = new SettingsWindow();
 			settingsWindow.Show();
 		}
+
 
 		private void StopService(object sender, RoutedEventArgs e)
 		{
