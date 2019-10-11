@@ -14,6 +14,9 @@ Firstly - Clone the repo.
 
 Secondly, you may want to customise the notifications that are sent, which you can do by editing the following file at the specified lines:
 
+[NotificationCustomisation]: FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG
+{: height="200px" width="100px"}
+
 <img align="center" src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG" style="overflow-x: scroll;"/>
 {: .overflow-auto}
 
