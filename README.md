@@ -1,6 +1,6 @@
 # FolderWatch
 <p align="center">
-  <img src="FolderWatchGUI/Images/cctv1.png" height="500"/>
+  <img src="FolderWatchGUI/Images/cctvHeaderImage.png" height="500"/>
 </p>
 
 # What is it?
