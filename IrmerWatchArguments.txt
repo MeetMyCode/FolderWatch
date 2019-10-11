@@ -1,1 +1,0 @@
-sc start IrmerWatchService senderEmail senderEmailPassword C:\Users\EatSleepCode\Desktop\IrmerWatchTestFolder recipientEmail

@@ -1,0 +1,26 @@
+﻿Installing assembly 'C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.InstallLog
+   assemblypath = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.exe
+Installing service FolderWatchService...
+Service FolderWatchService has been successfully installed.
+Creating EventLog source FolderWatchService in log Application...
+Committing assembly 'C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.InstallLog
+   assemblypath = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.exe
+Installing assembly 'C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.InstallLog
+   assemblypath = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.exe
+Installing service FolderWatchService...
+Service FolderWatchService has been successfully installed.
+Creating EventLog source FolderWatchService in log Application...
+Committing assembly 'C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.InstallLog
+   assemblypath = C:\Users\rossco\Desktop\SoftwareDevelopment\FolderWatch\FolderWatchGUI\bin\Debug\FolderWatchService\FolderWatch.exe
