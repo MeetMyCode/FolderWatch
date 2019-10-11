@@ -18,6 +18,8 @@ Secondly, you may want to customise the notifications that are sent, which you c
 
 Following that, build and run!
 
+**NOTE: If the service has already been started, and you wish to change any of the settings, remember to restart the service after the settings changes have been saved!**
+
 # Screen Shots
 <p align="center">
   <img src="FolderWatchGUI/ScreenShots/ss1.PNG"/>
