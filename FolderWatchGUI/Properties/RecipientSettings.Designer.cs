@@ -25,7 +25,7 @@ namespace FolderWatchGUI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ross.higgins@nhs.net")]
+        [global::System.Configuration.DefaultSettingValueAttribute("someone.else@nhs.net")]
         public string Recipient1 {
             get {
                 return ((string)(this["Recipient1"]));

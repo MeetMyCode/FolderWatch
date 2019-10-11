@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Recipient1" Type="System.String" Scope="User">
-      <Value Profile="(Default)">ross.higgins@nhs.net</Value>
+      <Value Profile="(Default)">someone.else@nhs.net</Value>
     </Setting>
     <Setting Name="Recipient2" Type="System.String" Scope="User">
       <Value Profile="(Default)">someperson@nhs.net</Value>
