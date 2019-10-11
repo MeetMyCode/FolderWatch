@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("folderwatchservice/folderwatch.pdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("screenshots/notificationcustomisation.png")]
 
 
