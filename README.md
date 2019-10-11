@@ -17,9 +17,9 @@ A Windows 7/10 PC. It may work on other Windows OS's, but I have only tested it 
   <img src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG"/>
 </p>
 
-**NOTE: If the Service has already been started, and you wish to change any of the settings, remember to restart the Service after the settings changes have been saved!**
-
 3. Following that, build and run!
+
+**NOTE: If the Service has already been started, and you wish to change any of the settings, remember to restart the Service after the settings changes have been saved!**
 
 # Screen Shots
 <p align="center">
