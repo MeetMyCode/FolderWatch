@@ -9,15 +9,15 @@ A Windows Service that is installed via a GUI. The Service monitors a user-speci
 A Windows 7/10 PC. It may work on other Windows OS's, but I have only tested it on 7 & 10. The Service also only works with NHS.NET addresses - it was made this way intentionally. 
 
 # Installation
-Firstly - Clone the repo.
+1. Clone the repo.
 
-Secondly, you may want to customise the notifications that are sent, which you can do by editing the following file (Place your text/html with the quotation marks):
+2. You may want to customise the notifications that are sent, which you can do by editing the following file (Place your text/html with the quotation marks):
 
 <p align="middle">
   <img src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG"/>
 </p>
 
-Following that, build and run!
+3. Following that, build and run!
 
 # Screen Shots
 <p align="center">
