@@ -14,9 +14,11 @@ Firstly - Clone the repo.
 
 Secondly, you may want to customise the notifications that are sent, which you can do by editing the following file at the specified lines:
 
+<pre>
 <p align="center">
   <img src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG"/>
 </p>
+</pre>
 
 Following that, build and run!
 
