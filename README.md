@@ -4,5 +4,5 @@
 
 # Screen Shots
 
-<img src="/FolderWatchGUI/Screenshots/ss1.png"/>
+<img src="./FolderWatchGUI/ScreenShots/ss1.png"/>
 
