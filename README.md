@@ -14,6 +14,8 @@ Firstly - Clone the repo.
 
 Secondly, you may want to customise the notifications that are sent, which you can do by editing the following file at the specified lines:
 
+<p style="overflow-x:scroll;">A Windows Service that is installed via a GUI. The Service monitors a user-specified folder for Excel files. When a new Excel file is placed in the folder, that file is automatically emailed to the specified list of recipients. Notifications via email about the Service starting or stopping are also automatically sent to the specified 'sender email address'.</p>
+
 <img align="center" src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG" style="overflow-x: scroll;"/>
 
 Following that, build and run!
