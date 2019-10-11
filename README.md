@@ -13,6 +13,14 @@ A Windows 7/10 PC. It may work on other Windows OS's, but I have only tested it 
 Firstly - Clone the repo.
 
 Secondly, you may want to customise the notifications that are sent, which you can do by editing the following file at the specified lines:
+
+<div itemprop="text" class="Box-body p-0 blob-wrapper data type-text ">
+      <div class="text-center p-3">
+          <span class="border-wrap"><img src="/MeetMyCode/FolderWatch/blob/master/FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG?raw=true" alt="NotificationCustomisation.PNG"></span>
+      </div>
+  </div>
+
+
 <p align="center">
   <img src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG" height="auto"/>
 </p>
