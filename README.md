@@ -14,7 +14,9 @@ Firstly - Clone the repo.
 
 Secondly, you may want to customise the notifications that are sent, which you can do by editing the following file at the specified lines:
 
+<div flex-auto box>
 <img src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG"/>
+</div>
 
 Following that, build and run!
 
