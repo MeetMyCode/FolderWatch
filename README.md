@@ -17,8 +17,7 @@ Secondly, you may want to customise the notifications that are sent, which you c
 ![NotificationCustomisation](FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG)!
 {: height="600px" width="100px"}
 
-<img align="center" src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG" style="overflow-x: scroll;"/>
-{: .overflow-auto}
+<img src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG"/>
 
 Following that, build and run!
 
