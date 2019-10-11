@@ -1,4 +1,3 @@
-# FolderWatch
 <p align="center">
   <img src="FolderWatchGUI/Images/cctvHeaderImage.png" height="500"/>
 </p>
@@ -14,7 +13,7 @@ Firstly - Clone the repo.
 
 Secondly, you may want to customise the notifications that are sent, which you can do by editing the following file at the specified lines (click on the image to make it bigger):
 
-<img src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG" style="overflow-x:scroll; width:auto;"/>
+<img src="FolderWatchGUI/ScreenShots/NotificationCustomisation.PNG"/>
 
 Following that, build and run!
 
