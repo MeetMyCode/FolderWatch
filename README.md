@@ -2,5 +2,7 @@
 
 # STATUS: INCOMPLETE.
 
-#Screen Shots
+# Screen Shots
+
+<img src="/Screenshots/ss1.png"/>
 
