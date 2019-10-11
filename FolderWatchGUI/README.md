@@ -11,7 +11,7 @@ A Windows 7/10 PC. It may work on other Windows OS's, but I have only tested it 
 # Installation
 Firstly - Clone the repo.
 
-Secondly, you may want to customise the notifications that are sent, which you can do by editing the following file at the specified lines:
+Secondly, you may want to customise the notifications that are sent, which you can do by editing the following file:
 <p align="center">
   <img src="FolderWatchGUI/Images/NotificationCustomisation.png"/>
 </p>
