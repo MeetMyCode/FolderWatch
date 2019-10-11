@@ -4,5 +4,5 @@
 
 # Screen Shots
 
-<img src="https://github.com/MeetMyCode/FolderWatch/FolderWatchGUI/blob/master/ScreenShots/ss1.png"/>
+<img src="https://github.com/MeetMyCode/FolderWatch/FolderWatchGUI/ScreenShots/ss1.png"/>
 
