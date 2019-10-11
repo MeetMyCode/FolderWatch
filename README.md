@@ -3,6 +3,6 @@
 # STATUS: INCOMPLETE.
 
 # Screen Shots
-
-<img src="FolderWatchGUI/ScreenShots/ss1.PNG" align="middle"/>
-
+<p align="center">
+  <img src="FolderWatchGUI/ScreenShots/ss1.PNG"/>
+</p>
